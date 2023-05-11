@@ -1,0 +1,120 @@
+:root{
+
+--DarkBlue:hsl(240,38%,20%);
+--GrayishBlue:hsl(240,18%,77%);
+}
+ * {
+    font-family: 'Inter', sans-serif;
+ }
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    overflow: hidden;
+}
+.container {
+    width: 80%;
+    height: 600px;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+ }
+
+ .bg-curve {
+    position: absolute;
+    bottom:0;
+    left: 0;
+    z-index: -1;
+ }
+
+.left {
+    width: 50%;
+    height: 100%;
+     display: flex;
+     justify-content: center;
+     /* align-items:center; */
+     position: relative;
+     flex-direction: column;
+     z-index: 1020;
+}
+
+.right {
+    width: 50%;
+    height: 100%;
+    background-image: url(./images/pattern-bg.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    right: 120px;
+}
+
+.description {
+    color: var(--DarkBlue);
+    font-size: 31px;
+    line-height: 39px;
+    font-weight: 300;
+}
+
+.pattern-quotes {
+    position: absolute;
+    left: 90px;
+    top: 110px;
+}
+
+.name {
+    color: var(--DarkBlue);
+    font-weight: 700;
+    font-size: 24px;
+    margin-top: 20px;
+}
+
+.position {
+    color: var(--GrayishBlue);
+    font-weight: 300;
+}
+
+.slider {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    height: 90%;
+    /* position: relative; */
+}
+.image-shower {
+    width: 450px;
+    height: 450px;
+    border-radius: 10px;
+     box-shadow: 0px 2px 5px 0px #00000096;
+}
+.switcher {
+    width: 100px;
+    height: 50px;
+    background-color: white;
+    border-radius: 40px;
+    position: absolute;
+    bottom: 50px;
+    left: 120px;
+    box-shadow: 0px 0px 10px 0px #00000096;
+    display: flex;
+}
+
+.left-arrow {
+    width: 50%;
+    height: 100%;
+    background-image:url(./images/icon-prev.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor:pointer;
+}
+
+.right-arrow {
+    width: 50%;
+    height: 100%;
+    background-image:url(./images/icon-next.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+     
+}
